@@ -23,12 +23,13 @@ body {
     padding: 40px 20px 40px 20px;
 }
 
-/* 
 nav {
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-*/
 
+nav :hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 nav a {
     color: white;
     padding: 14px 20px 14px 20px;
@@ -39,6 +40,7 @@ nav a {
 
 nav a:hover {
     color: crimson;
+
 }
 
 /* Centering the button */
