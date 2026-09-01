@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    /* normalization */
+
+body {
+    background-image: url("../assets/bg3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    font-family: Jetbrains Mono;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px 14px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+nav a.menu_right {
+    float: right;
+}
+
+nav a.menu_left {
+    float: left;
+}
+
+/* Centering the button */
+.dropdown {
+    float: right;
+    position:  relative;
+}
+
+/* Styling the dropdown */
+.dropdown button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent; 
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px black;
+    z-index: 1;
+}
+
+.dropdown .content a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .content{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#left_side {
+	flex: 35%;
+	padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#left_side img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* crop image to fit the frame */
+    display: block;
+    margin: 20px auto;
+    padding: 5px 5px;
+}
+
+#right_side {
+	flex: 60%;
+	padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#flex_container {
+	display: flex;
+	flex-wrap: nowrap;
+    clear: both;
+}
+
+* article {
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+* article h2 {
+    color: crimson;
+}

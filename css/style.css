@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    /* normalization */
+
+body {
+    background-image: url("../assets/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    font-family: Jetbrains Mono;
+}
+
+#avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* crop image to fit the frame */
+    margin: 20px auto;
+    padding: 40px 20px 40px 20px;
+}
+
+/* 
+nav {
+    overflow: hidden;
+}
+*/
+
+nav a {
+    color: white;
+    padding: 14px 20px 14px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+/* Centering the button */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Styling the dropdown */
+.dropdown button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent; 
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: transparent;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dropdown .content a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
