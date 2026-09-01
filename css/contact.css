@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    /* normalization */
+
+body {
+    background-color: rgb(18, 18, 54);
+    font-size: 20px;
+    font-family: Jetbrains Mono;
+}
+
+#topnav a {
+    color: white;
+    padding: 14px 20px 14px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#topnav a:hover {
+    color: crimson;
+}
+
+#topnav a.menu_right {
+    float: right;
+}
+
+#topnav a.menu_left {
+    float: left;
+}
+
+/* Centering the button */
+#topnav .dropdown {
+    float: right;
+    position:  relative;
+}
+
+/* Styling the dropdown */
+#topnav .dropdown button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent; 
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+#topnav .dropdown .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px black;
+    z-index: 1;
+}
+
+#topnav .dropdown .content a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+#topnav .dropdown:hover .content{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* crop image to fit the frame */
+    margin: 20px auto;
+    padding: 20px 10px 20px 10px;
+    clear: both;
+}
+
+#author {
+    color: blanchedalmond;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#vertical-nav {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#vertical-nav :hover {
+    background-color: burlywood;
+}
+
+#vertical-nav a {
+    color: black;
+    background-color: blanchedalmond;
+    padding: 10px 90px 10px 90px;
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
