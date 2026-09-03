@@ -81,6 +81,47 @@ nav a.menu_left {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#puskas {
+/* Flexbox */
+/* Left side */
+.search-menu {
+	flex: 25%;
+	padding: 10px 20px;
+}
+
+/* Right side */
+.highlights {
+	flex: 70%;
+	padding: 10px 20px;
+}
+
+.flex_container {
     clear: both;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Style the search box */
+#userInput {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myList li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#myList li a:hover {
+    background-color: #eee;
 }

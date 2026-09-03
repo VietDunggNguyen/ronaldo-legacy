@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../css/career.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>Ronaldo's Legacy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 <body>
     <nav>
         <a class="menu_left" href="../index.html"> <i class="fa fa-home" style="font-size:36px"></i> </a>
@@ -36,26 +42,67 @@
         <a class="menu_right" href="../contact.html"> about author </a>
     </nav>
 
-    <div id="puskas" class="goals">
-        <h3>Puskas goal vs FC Porto (UCL) 04/15/2009</h3>
-        <video width="500px" controls muted loop>
-            <source src="../assets/puskas2009.mp4"></source>
-        </video>
+    <div class="flex_container">
+        <div class="search-menu" style="background-color:#bbb;">
+            <h2>Menu</h2>
+            <input type="text" id="userInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a stunning moment">
+            <ul id="myList">
+                <li><a href="#puskas">Puskas goal vs FC Porto (UCL) 04/15/2009</a></li>
+                <li><a href="#knuckle-ball">Outrageous Free Kick vs Portsmouth</a></li>
+                <li><a href="#juve-hattrick">Simeone's embarrassment</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="highlights">
+            <div id="puskas" class="goals">
+                <h3>Puskas goal vs FC Porto (UCL) 04/15/2009</h3>
+                <video width="500px" controls muted loop>
+                    <source src="../assets/puskas2009.mp4"></source>
+                </video>
+            </div>
+
+            <div id="knuckle-ball" class="goals">
+                <h3>Outrageous Free Kick vs Portsmouth</h3>
+                <video width="500px" controls>
+                    <source src="../assets/knuckleball.mp4"></source>
+                </video>
+            </div>
+
+            <div id="juve-hattrick" class="goals">
+                <h3>Simeone's embarrassment</h3>
+                <video width="500px" controls>
+                    <source src="../assets/cb_hattrick.mp4"></source>
+                </video>
+            </div>
+        </div>
     </div>
 
-    <div id="knuckle-ball" class="goals">
-        <h3>Outrageous Free Kick vs Portsmouth</h3>
-        <video width="500px" controls>
-            <source src="../assets/knuckleball.mp4"></source>
-        </video>
-    </div>
+    <script>
+        function myFunction(){
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("userInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myList");
+        li = ul.getElementsByTagName("li");
 
-    <div id="hattrick" class="goals">
-        <h3>Simeone's embarrassment</h3>
-        <video width="500px" controls>
-            <source src="../assets/cb_hattrick.mp4"></source>
-        </video>
-    </div>
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++)
+        {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1){
+                li[i].style.display = "";
+            } else{
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 
 </body>
 </html>
