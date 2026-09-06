@@ -84,13 +84,13 @@ nav a.menu_left {
 /* Flexbox */
 /* Left side */
 .search-menu {
-	flex: 25%;
+	flex: 20%;
 	padding: 10px 20px;
 }
 
 /* Right side */
 .highlights {
-	flex: 70%;
+	flex: 75%;
 	padding: 10px 20px;
 }
 
@@ -101,11 +101,38 @@ nav a.menu_left {
 }
 
 /* Style the search box */
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+/* enable when the user gets or gives focus to the search input */
+.search:focus-within {
+    background: #f1f1f1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
 #userInput {
-    width: 100%;
-    font-size: 18px;
-    padding: 11px;
-    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: 14px;
+    /* make the input field blend within the container */
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+/* placeholder text */
+#userInput::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Style the navigation menu inside the left column */

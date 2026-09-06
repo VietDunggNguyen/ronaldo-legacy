@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- mobile friendly -->
     <link rel="stylesheet" href="../css/career.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <title>Ronaldo's Legacy</title>
     <style>
         * {
@@ -45,7 +46,13 @@
     <div class="flex_container">
         <div class="search-menu" style="background-color:#bbb;">
             <h2>Menu</h2>
-            <input type="text" id="userInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a stunning moment">
+            <!-- Search bar -->
+            <form>
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input type="text" id="userInput" onkeyup="myFunction()" placeholder="Search" title="Type in a stunning moment">
+                </div>
+            </form>
             <ul id="myList">
                 <li><a href="#puskas">Puskas goal vs FC Porto (UCL) 04/15/2009</a></li>
                 <li><a href="#knuckle-ball">Outrageous Free Kick vs Portsmouth</a></li>
