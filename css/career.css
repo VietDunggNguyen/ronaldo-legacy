@@ -151,4 +151,5 @@ nav a.menu_left {
 
 #myList li a:hover {
     background-color: #eee;
+    border-radius: 20px;
 }
