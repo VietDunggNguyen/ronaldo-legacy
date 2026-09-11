@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Milonga&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -102,10 +104,13 @@ nav a.menu_left {
 
 * article {
     color: whitesmoke;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
 }
 
 * article h2 {
     color: crimson;
+    font-family: "Milonga", serif;
+    font-size: 40px;
+    font-weight: 500;
 }

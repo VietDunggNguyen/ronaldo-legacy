@@ -6,8 +6,8 @@
 
 body {
     background-image: url("../assets/bg4.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     font-size: 20px;
     font-family: Jetbrains Mono;
 }
@@ -75,10 +75,15 @@ nav a.menu_left {
 .goals {
     color: blanchedalmond;
     text-align: center;
+    /* height: 50vh;
+    width: 50vw;
+    min-height: 280px;
+    min-width: 500px; */
 }
 
 .goals h3 {
     background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 /* Flexbox */
@@ -86,6 +91,8 @@ nav a.menu_left {
 .search-menu {
 	flex: 20%;
 	padding: 10px 20px;
+    top: 20px;
+    position: sticky;
 }
 
 /* Right side */
@@ -98,6 +105,7 @@ nav a.menu_left {
     clear: both;
 	display: flex;
 	flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
 /* Style the search box */
